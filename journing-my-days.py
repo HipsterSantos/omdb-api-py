@@ -1,12 +1,13 @@
 import data_service
+
 def print_heaer():
     print("_______________________")
     print("     Journing app")
     print("_______________________")
 def run_event_loop():
     print("What do you want to do ?")
-    cmd = None
-    while cmd != 'x':
+    cmd = "Empty"
+    while cmd != 'x' and cmd:
         cmd = input("Choose between [L]ist , [A]add , E[x]it:")
         cmd = cmd.lower().strip()
         if cmd == 'l':
